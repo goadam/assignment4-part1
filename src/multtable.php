@@ -1,3 +1,9 @@
+<html>
+<head>
+<title>table php</title>
+</head>
+<body>
+<table border="1">
 <?php
 	$err = false;
 	$min_multiplicand = $_REQUEST['min_multiplicand'];
@@ -29,17 +35,56 @@
 	}
 	
 	//chack min max
-	if(checkMultiplicand($min_multiplicand, $max_multiplicand) == false) {
-		$err = true;
-		echo("<br/>Minimum [multiplicand] larger than maximum");
+	if($err == false) {
+		if(checkMultiplicand($min_multiplicand, $max_multiplicand) == false) {
+			$err = true;
+			echo("<br/>Minimum [multiplicand] larger than maximum");
+		}
+		
+		if(checkMultiplier($min_multiplier, $max_multiplier) == false) {
+				$err = true;
+				echo("<br/>Minimum [multiplier] larger than maximum");
+		}
+
+		if($err == false) {
+			createTable($min_multiplicand, $max_multiplicand, $min_multiplier, $max_multiplier);
+		}
+	}
+	//functions
+	function createTable($minC, $maxC, $minR, $maxR) {
+		$i = $minC;
+		$j = $minR;
+		
+		createTopRow($minR, $maxR);
+		
+		while($i <= $maxC) {
+			createRow($i, $minR, $maxR);
+			$i++;
+		}
 	}
 	
-	if(checkMultiplier($min_multiplier, $max_multiplier) == false) {
-			$err = true;
-			echo("<br/>Minimum [multiplier] larger than maximum");
+	function createTopRow($min, $max) {
+		$idx = $min;
+		
+		echo ("<tr>");
+		echo("<td></td>");
+		while ($idx <= $max){
+			echo("<td>$idx</td>");
+			$idx++;
+		}
 	}
-
-	//functions
+	
+	function createRow($multiplicand, $min, $max){
+		$row_index = $min;
+		echo("<tr>");
+		echo("<td>$multiplicand</td>");
+		
+		while($row_index <= $max) {
+			echo("<td>" . $multiplicand * $row_index . "</td>");
+			$row_index++;
+		}
+	}
+	
 	function checkValue($value, $var_name){
 		if(isEmpty($value) == true) {
 			echo("<br/>Missing parameter [" . $var_name . "].");
@@ -90,3 +135,6 @@
 	}
 ?>
 
+</table>
+</body>
+</html>
