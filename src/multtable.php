@@ -6,10 +6,12 @@
 <table border="1">
 <?php
 	$err = false;
-	$min_multiplicand = $_REQUEST['min_multiplicand'];
-	$max_multiplicand = $_REQUEST['max_multiplicand'];
-	$min_multiplier = $_REQUEST['min_multiplier'];
-	$max_multiplier = $_REQUEST['max_multiplier'];
+	
+	$min_multiplicand = $_GET['min_multiplicand'];
+	$max_multiplicand = $_GET['max_multiplicand'];
+	$min_multiplier = $_GET['min_multiplier'];
+	$max_multiplier = $_GET['max_multiplier'];
+	
 	
 	echo("min_multiplicand: " . $min_multiplicand);
 	echo("<br/>max_multiplicand: ". $max_multiplicand);
