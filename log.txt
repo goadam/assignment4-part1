@@ -1,0 +1,48 @@
+commit bc1571d1cc045799315c37a783101b3f5bb9ee44
+Author: Adam Martinez <adam70181@yahoo.com>
+Date:   Sun Feb 8 22:33:12 2015 -0600
+
+    turn in
+
+commit 99d094a3f649173b9e5ba327a7a619da1753ed28
+Author: Adam Martinez <adam70181@yahoo.com>
+Date:   Sun Feb 8 21:29:24 2015 -0600
+
+    Initial commit. Have username
+
+commit 132223501217d99b2efdde2a8554417a8fc88606
+Author: Adam Martinez <adam70181@yahoo.com>
+Date:   Sun Feb 8 19:50:23 2015 -0600
+
+    loopback complete
+
+commit a085a579e44763f9cab6c4959a3470405671062e
+Author: Adam Martinez <adam70181@yahoo.com>
+Date:   Sun Feb 8 17:27:43 2015 -0600
+
+    added _GET for variables
+
+commit adaf43bcdd8fc1f31dc92bcf155bf07b3e12806f
+Author: Adam Martinez <adam70181@yahoo.com>
+Date:   Sun Feb 8 17:09:18 2015 -0600
+
+    finished
+
+commit bfa896321538a6de2d2b0d58f8b0c2aee786d630
+Author: Adam Martinez <adam70181@yahoo.com>
+Date:   Sun Feb 8 16:10:09 2015 -0600
+
+    user input validation
+
+commit 4690c6eeae758dae89f68c501c80f44183dea7e7
+Author: Adam Martinez <adam70181@yahoo.com>
+Date:   Sun Feb 8 14:09:03 2015 -0600
+
+    initial commit.
+
+commit da57e7c2eb3a48984cf6264a2371a4ac0fe6be52
+Author: Adam Martinez <adam70181@yahoo.com>
+Date:   Sun Feb 8 13:38:41 2015 -0600
+
+    Initial commit
+C:\CS290\php\assignment4-part1 [master +1 ~0 -0 !]>
